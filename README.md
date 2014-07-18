@@ -10,4 +10,4 @@ Initially, it will provide basic functionality, such as:
 Later on, I will be adding support for:
 
 * *rgba*, making **Paata** an ideal color picker for web developers.
-* Options to generate *complementary* color schemes based on the user generated color.
+* An option to generate *complementary* colors based on the user generated color.
