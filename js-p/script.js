@@ -1,4 +1,5 @@
-    $( document ).ready(function() {
+    
+        $( document ).ready(function() {
 		var color = "";
 		var count = 0;
         var alpha = 0;
@@ -8,7 +9,7 @@
 				color = color + $(this).attr('data-slider') + ',';
 			}
             
-            if (count == 3) {
+            else {
                 alpha = $(this).attr('data-slider');
             }
 			count++;
@@ -39,7 +40,7 @@
 				color = color + $(this).attr('data-slider') + ',';
 			}
             
-            else (count == 3) {
+            else {
                 alpha = $(this).attr('data-slider');
             }
 			count++;
