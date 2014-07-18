@@ -11,3 +11,5 @@ Later on, I will be adding support for:
 
 * *rgba*, making **Paata** an ideal color picker for web developers.
 * An option to generate *complementary* colors based on the user generated color.
+
+Paata is the Sinhalese word for color - just in case you were wondering :)
