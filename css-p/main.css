@@ -18,7 +18,7 @@
 }
 
 #slider-container {
-	padding-top: 3em;
+	padding-top: 2em;
 }
 
 body {
@@ -69,4 +69,30 @@ body {
 	font-size: 2em;
 	font-family: 'Lato';
 	margin-bottom: -0.5em;
+}
+
+#footer{
+	display: block;
+	text-align: center;
+	font-size: 0.9em;
+	bottom:0;
+	width: 100%;
+	height: 30px;
+	color: rgb(154, 154, 154);
+	position: fixed;
+	margin-bottom: -10px;
+	font-family: 'Josefin Slab';
+}
+
+#footer a {
+	text-decoration: underline;
+	color: rgb(200, 200, 200);
+}
+
+#footer a:hover {
+	color: rgb(150, 150, 150);
+}
+
+.range-slider-handle {
+	font-family: 'Permanent Marker', cursive;
 }
