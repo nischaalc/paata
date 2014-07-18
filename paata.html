@@ -55,6 +55,16 @@
 			<span id="blueOut"></span>
 		</div>
 	</div>
+    
+    <div class = "slider-row">
+		<div class="range-slider" data-slider data-options="display_selector: #alpha; start: 0; end: 1; step: 0.1;">
+		  <span class="range-slider-handle">A</span>
+		  <span class="range-slider-active-segment"></span>
+		</div>
+		<div class = "slider-text">
+			<span id="alpha"></span>
+		</div>
+	</div>
 
 </div>
 
@@ -66,25 +76,28 @@
 <script src="js-p/jquery.js"></script>
 <script src="js-p/foundation/foundation.js"></script>
 <script src="js-p/foundation/foundation.slider.js"></script>
+<!--<script src="js-p/script.js"></script>-->
 
 <script>
 	$(document).foundation(); 
-	
-	$( document ).ready(function() {
+    
+        $( document ).ready(function() {
 		var color = "";
 		var count = 0;
+        var alpha = 0;
 		
 		$('.range-slider').each(function() {
-            if (count < 2) {
+            if (count < 3) {
 				color = color + $(this).attr('data-slider') + ',';
 			}
-			else{
-				color = color + $(this).attr('data-slider');}
-				
+            
+            else {
+                alpha = $(this).attr('data-slider');
+            }
 			count++;
         });
-
-		color = 'rgb(' + color + ')';
+         
+		color = 'rgba(' + color + ',' + alpha + ')';
 		$('body').css( "background", color);
 	});
 	
@@ -102,18 +115,20 @@
 		
 		var color = "";
 		var count = 0;
-		
+        var alpha = 0;
+        
 		$('.range-slider').each(function() {
-            if (count < 2) {
+            if (count < 3) {
 				color = color + $(this).attr('data-slider') + ',';
 			}
-			else{
-				color = color + $(this).attr('data-slider');}
-				
+            
+            else {
+                alpha = $(this).attr('data-slider');
+            }
 			count++;
         });
 
-		color = 'rgb(' + color + ')';
+		color = 'rgba(' + color + alpha + ')';
 		$('body').css( "background", color);
 	});
 </script>
