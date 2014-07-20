@@ -17,6 +17,26 @@
 	padding-top: 1.5em;
 }
 
+#value-disp {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.val-cont {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 1em;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 0.2em;
+    font-family: 'Josefin Slab';
+    padding: 0.5em;
+}
+
 #slider-container {
 	padding-top: 2em;
 }
@@ -85,4 +105,17 @@ body {
 
 .range-slider-handle {
 	font-family: 'Permanent Marker', cursive;
+}
+
+#comp-cont {
+    margin-left: 47%;
+    margin-right: 47%;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.a-cont {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(0, 0, 0);
 }
