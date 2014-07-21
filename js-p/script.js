@@ -6,7 +6,7 @@ var alpha = 0;
 var hex = "";
 var val = "";
 
-/*
+/* 
  - Set initial values/colors for when page is loaded
  */
 $( document ).ready(function() {
