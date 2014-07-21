@@ -25,7 +25,7 @@
 }
 
 .val-cont {
-    color: rgb(0, 0, 0);
+    color: RGB(0,0,0);
     display: inline-block;
     font-size: 1.5em;
     margin: 1em;
@@ -60,6 +60,7 @@ body {
 #title {
 	font-family: 'Finger Paint', cursive;
 	font-size: 5em;
+	color: rgb(0,0,0);
 }
 
 #subtitle {
