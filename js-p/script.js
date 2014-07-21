@@ -6,7 +6,7 @@ var alpha = 0;
 var hex = "";
 var val = "";
 
-/* 
+/*
  - Set initial values/colors for when page is loaded
  */
 $( document ).ready(function() {
@@ -27,6 +27,9 @@ $( document ).ready(function() {
     hex = '#' + hex;
     $('body').css( "background", colorRGB);
 	$('#title').css( "color", '#000000');
+	$('.range-slider-handle').css('color', '#000000');
+	$('.range-slider-handle').css('background-color', '#FFFFFF');
+	
     displayVal(colorRGB, hex, compColor);
 });
 
@@ -85,6 +88,8 @@ $('[data-slider]').on('change.fndtn.slider', function(){
 	$('#title').css("color", compColor);
 	$('#comp-val').css("color", hex);
 	$('.comp-val-cont').css("background-color", compColor);
+	$('.range-slider-handle').css('background-color', compColor);
+	$('.range-slider-handle').css('color', hex);
 	
     displayVal(colorRGB, hex, compColor);
 });
