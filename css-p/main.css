@@ -64,7 +64,7 @@ body {
 }
 
 #title {
-	font-family: 'Finger Paint', cursive;
+	font-family: 'Finger Paint';
 	font-size: 5em;
 }
 
@@ -104,7 +104,7 @@ body {
 }
 
 .range-slider-handle {
-	font-family: 'Josefin Slab', cursive;
+	font-family: 'Josefin Slab';
 }
 
 #comp-cont {
