@@ -33,7 +33,6 @@
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     padding-top: 0.2em;
-    font-family: 'Josefin Slab';
     padding: 0.5em;
 }
 
@@ -43,12 +42,12 @@
 
 body {
 	font-size: 16px;
+	font-family: 'Josefin Slab', serif;
 }
 
 .slider-text {
 	margin-left: 3em;
 	margin-top: 0.9em;
-	font-family: 'Josefin Slab';
 	font-size: 1.3em;
 }
 
@@ -64,12 +63,11 @@ body {
 }
 
 #title {
-	font-family: 'Finger Paint';
+	font-family: 'Finger Paint', cursive;
 	font-size: 5em;
 }
 
 #subtitle {
-	font-family: 'Josefin Slab';
 	font-size: 1.3em;
 }
 
@@ -77,7 +75,6 @@ body {
 	width: 100%;
 	text-align: center;
 	font-size: 2em;
-	font-family: 'Josefin Slab';
 	margin-bottom: -0.5em;
 }
 
@@ -91,7 +88,6 @@ body {
 	color: rgb(154, 154, 154);
 	position: fixed;
 	margin-bottom: -10px;
-	font-family: 'Josefin Slab';
 }
 
 #footer a {
@@ -101,10 +97,6 @@ body {
 
 #footer a:hover {
 	color: rgb(150, 150, 150);
-}
-
-.range-slider-handle {
-	font-family: 'Josefin Slab';
 }
 
 #comp-cont {
