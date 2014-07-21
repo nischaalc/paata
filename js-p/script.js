@@ -88,3 +88,36 @@ $('[data-slider]').on('change.fndtn.slider', function(){
 	
     displayVal(colorRGB, hex, compColor);
 });
+
+//--- Auto-selection on click based on http://jsfiddle.net/sYzwA/1/ ---//
+$('.val-cont').click(function (){
+    var range, selection;
+
+    if (window.getSelection && document.createRange) {
+        selection = window.getSelection();
+        range = document.createRange();
+        range.selectNodeContents($(this)[0]);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    } else if (document.selection && document.body.createTextRange) {
+        range = document.body.createTextRange();
+        range.moveToElementText($(this)[0]);
+        range.select();
+    }
+});
+
+$('.comp-val-cont').click(function (){
+    var range, selection;
+
+    if (window.getSelection && document.createRange) {
+        selection = window.getSelection();
+        range = document.createRange();
+        range.selectNodeContents($(this)[0]);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    } else if (document.selection && document.body.createTextRange) {
+        range = document.body.createTextRange();
+        range.moveToElementText($(this)[0]);
+        range.select();
+    }
+});
