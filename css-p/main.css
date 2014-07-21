@@ -21,6 +21,7 @@
     width: 100%;
     text-align: center;
     margin-top: 1.5em;
+	font-family: 'Josefin Slab', serif;
 }
 
 .val-cont {
@@ -42,18 +43,12 @@
 
 body {
 	font-size: 16px;
-	font-family: 'Josefin Slab', serif;
-}
-
-.slider-text {
-	margin-left: 3em;
-	margin-top: 0.9em;
-	font-size: 1.3em;
 }
 
 .range-slider-handle {
 	text-align: center;
 	padding-top: 0.2em;
+	font-family: 'Josefin Slab', serif;
 }
 
 #intro-text {
@@ -69,6 +64,7 @@ body {
 
 #subtitle {
 	font-size: 1.3em;
+	font-family: 'Josefin Slab', serif;
 }
 
 .dev-notice {
@@ -76,6 +72,7 @@ body {
 	text-align: center;
 	font-size: 2em;
 	margin-bottom: -0.5em;
+	font-family: 'Josefin Slab', serif;
 }
 
 #footer{
@@ -88,6 +85,7 @@ body {
 	color: rgb(154, 154, 154);
 	position: fixed;
 	margin-bottom: -10px;
+	font-family: 'Josefin Slab', serif;
 }
 
 #footer a {
