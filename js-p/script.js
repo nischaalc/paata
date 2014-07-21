@@ -29,6 +29,7 @@ $( document ).ready(function() {
     colorRGB = 'rgb(' + colorRGB + ')';
     hex = '#' + hex;
     $('body').css( "background", colorRGB);
+	$('#title').css( "color", '#000000');
     displayVal(colorRGB, hex);
 });
 
@@ -70,12 +71,9 @@ $('[data-slider]').on('change.fndtn.slider', function(){
     });
     
     colorRGB = 'rgb(' + colorRGB + ')';
+	var compColor = (parseInt('0x' + hex) ^ 0xFFFFFF).toString(16).slice(-6);
     hex = '#' + hex;
     $('body').css( "background", colorRGB);
+	$('#title').css("color", compColor);
     displayVal(colorRGB, hex);
 });
-
-function getComplement(color) {
-    
-}
-
