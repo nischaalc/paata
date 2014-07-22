@@ -10,7 +10,14 @@ var val = "";
  - Set initial values/colors for when page is loaded
  */
 $( document ).ready(function() {
-     $('.range-slider').each(function() {
+     var randVal = 0;
+	 
+	 $('.range-slider').each(function() {
+		randVal = Math.floor(Math.random() * (255 - 1 + 1)) + 1;	
+		$(this).foundation('slider', 'set_value', randVal);
+	 });
+	 
+	 $('.range-slider').each(function() {
         val = $(this).attr('data-slider');
         if (count < 2) {
             colorRGB = colorRGB + val + ',';
