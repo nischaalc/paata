@@ -14,4 +14,4 @@ Later on, I will be adding support for:
 
 Paata is the [Sinhalese](http://en.wikipedia.org/wiki/Sinhala_language) word for color - just in case you were wondering.
 
-**Default branch is `gh-pages` --- `master` will not be updated any longer.
+**Default branch is `gh-pages` --- `master` will not be updated any longer.**
