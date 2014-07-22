@@ -43,7 +43,6 @@ body {
 	font-family: 'Finger Paint', cursive;
 	font-size: 5em;
 	color: rgb(0,0,0);
-	margin-left: -1em;
 }
 
 #subtitle {
@@ -74,7 +73,6 @@ body {
 }
 
 #footer #text {
-	margin-right: -1em;
 	margin-bottom: -20px;
 }
 
@@ -117,16 +115,15 @@ body {
 
 #info {
 	float: right;
-	margin-left: 20px;
 	font-size: 1.5em;
 	font-family: 'Josefin Slab', serif;
 	color: rgb(255, 255, 255);
-	height: auto;
 	width: 1em;
 	border-radius: 50%;
 	background-color: rgb(0,0,0);
 	margin-bottom: 20px;
 	margin-right: 10px;
+	box-shadow: 0px 4px 4px rgb(0,0,0);
 }
 
 #intro-text a {
