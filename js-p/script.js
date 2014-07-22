@@ -12,10 +12,9 @@ var val = "";
 $( window ).load(function() {
      var randVal = 0;
 	 
-	 $('.range-slider').each(function() {
-		/*randVal = Math.floor(Math.random() * (255 - 1 + 1)) + 1;	
-		$(this).foundation('slider', 'set_value', randVal);*/
-	    val = $(this).attr('slider');
+	$('.range-slider').each(function() {
+
+		val = $(this).attr('data-slider');
         if (count < 2) {
             colorRGB = colorRGB + val + ',';
             hex = hex + componentToHex(val);
@@ -34,7 +33,9 @@ $( window ).load(function() {
 	$('.range-slider-handle').css('color', '#000000');
 	$('.range-slider-handle').css('background-color', '#FFFFFF');
 	
+	setRandom();	
     displayVal(colorRGB, hex, compColor);
+
 });
 
 /*
@@ -46,6 +47,15 @@ function componentToHex(c) {
     var hex = parseInt(c).toString(16);
     return hex.length == 1 ? "0" + hex : hex;
 }
+
+/*
+function setRandom() {
+	$('.range-slider').each(function() {
+		randVal = Math.floor(Math.random() * (255)) + 1;	
+		$(this).foundation('slider', 'set_value', randVal);
+	});
+}
+*/
 
 /*
  - Display the RGB, hex and complementary color codes
