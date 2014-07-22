@@ -9,16 +9,13 @@ var val = "";
 /*
  - Set initial values/colors for when page is loaded
  */
-$( document ).ready(function() {
+$( window ).load(function() {
      var randVal = 0;
 	 
 	 $('.range-slider').each(function() {
-		randVal = Math.floor(Math.random() * (255 - 1 + 1)) + 1;	
-		$(this).foundation('slider', 'set_value', randVal);
-	 });
-	 
-	 $('.range-slider').each(function() {
-        val = $(this).attr('data-slider');
+		/*randVal = Math.floor(Math.random() * (255 - 1 + 1)) + 1;	
+		$(this).foundation('slider', 'set_value', randVal);*/
+	    val = $(this).attr('slider');
         if (count < 2) {
             colorRGB = colorRGB + val + ',';
             hex = hex + componentToHex(val);
@@ -101,7 +98,7 @@ $('[data-slider]').on('change.fndtn.slider', function(){
     displayVal(colorRGB, hex, compColor);
 });
 
-//--- Auto-selection on click based on http://jsfiddle.net/sYzwA/1/ ---//
+//--- Select on click based on http://jsfiddle.net/sYzwA/1/ ---//
 $('.val-cont').click(function (){
     var range, selection;
 
