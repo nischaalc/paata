@@ -5,21 +5,21 @@ body {
 
 /* Ensures vertical AND horizontal position for the sliders */
 .slider-row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-     -ms-flex-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-     -ms-flex-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	  align-items: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	  justify-content: center;
 	padding-top: 1.5em;
 }
 
@@ -54,9 +54,9 @@ body {
 	display: block;
 	text-align: center;
 	font-size: 0.9em;
-	bottom: 5px;
+	bottom: 0;
 	width: 100%;
-	height: 30px;
+	height: 1.3em;
 	color: rgb(154, 154, 154);
 	position: fixed;
 	font-family: 'Josefin Slab', serif;
